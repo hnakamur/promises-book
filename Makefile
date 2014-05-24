@@ -1,6 +1,7 @@
 SRC_FILE=index.adoc
 OUTPUT_FILE=index.html
-OUTPUT_PDF_FILE=index.pdf
+PDF_THEME_FILE=pdf-ja-theme.yml
+PDF_OUTPUTFILE=index.pdf
 
 all: clean html
 
@@ -23,8 +24,8 @@ pdf:
 	@echo "Generate PDF..."
 	@echo "Building asciidoc"
 	@bundle exec ruby `bundle show asciidoctor-pdf`/bin/asciidoctor-pdf \
-	${SRC_FILE}
-	@echo "Done! => ${OUTPUT_PDF_FILE}"
+	--theme ${PDF_THEME_FILE} ${SRC_FILE}
+	@echo "Done! => ${PDF_OUTPUT_FILE}"
 
 clean:
 	@rm -f {OUTPUT_FILE}
