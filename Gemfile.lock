@@ -1,6 +1,7 @@
 GIT
-  remote: git://github.com/opendevise/asciidoctor-pdf.git
-  revision: 79526368a56413b1ce17a91b591d919bef6886ba
+  remote: git://github.com/hnakamur/asciidoctor-pdf.git
+  revision: 7ba4b7952d5b335a524813d628d110264bac9751
+  branch: vlgothic_font_support
   specs:
     asciidoctor-pdf (1.0.0.dev)
       asciidoctor (~> 1.5.0.preview4)

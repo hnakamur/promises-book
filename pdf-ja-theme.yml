@@ -9,7 +9,7 @@ page:
   size: Letter
 base:
   font_color: 333333
-  font_family: LiberationSans
+  font_family: 'VL PGothic'
   #font_size: 14
   font_size: 11.2
   #font_size: 10.5
